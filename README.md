@@ -1,4 +1,4 @@
-# BlissCafe
+# Bliss Café
 
 *Bliss Café's Content Management System*
 
