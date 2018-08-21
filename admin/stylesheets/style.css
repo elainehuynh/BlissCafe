@@ -1,0 +1,196 @@
+/* ============================= Import Fonts ============================= */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+
+/* ============================= Basic Styles ============================= */
+
+body {
+	background: #e1e6e3;
+	background-repeat: repeat;
+	font-family: 'Open Sans', 'sans-serif';
+	font-weight: 300;
+	font-size: 1em;
+	color: #333;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
+}
+::selection {
+	color: #ffffff;
+	background: #606060;
+}
+::-moz-selection {
+	color: #ffffff;
+	background: #606060;
+}
+
+/* ============================= Navigation ============================= */
+
+nav {
+	font-weight: 400;
+	color: #333;
+	background-color: #ff7876;
+	margin-top: 10px;
+	width: 100%;
+}
+nav ul {
+	padding-left: 0;
+	list-style: none;
+	margin: 0px auto;
+}
+nav li {
+	display: table-cell;
+}
+nav li a, nav a:active, nav a:visited, .activelink{
+	color: #000;
+	display: table-cell;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 9pt;
+	letter-spacing: 2px;
+	padding: 20px;
+	width: auto;
+	height: auto;
+}
+nav li a:hover {
+	color: #bfd6c7;
+	background-color: #574b45;
+	-webkit-transition: opacity 0.5s linear;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+	border-bottom: none;
+}
+
+/* ============================= Structural ============================= */
+
+.login {
+	width: 500px;
+	text-align: center;
+	margin: 50px auto;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.9);
+	border-top: 15px solid #574b45;
+	border-bottom: 2px solid #cacaca;
+}
+
+
+/* ============================= Typography ============================= */
+
+h1, h2, h3, h4, h5, h6 {
+	color: #ff7876;
+	font-family: 'Oswald', sans-serif; 
+	text-transform: uppercase;
+	-webkit-font-smoothing: antialiased;
+	padding-bottom: 20px;
+	text-align: center;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+h1 { font-size: 46px; line-height: 50px; margin-bottom: 14px; }
+h2 { font-size: 35px; line-height: 40px; margin-bottom: 10px; }
+h3 { font-size: 28px; line-height: 34px; margin-bottom: 8px; }
+h4 { font-size: 21px; line-height: 30px; margin-bottom: 4px; text-align: left; color: #574b45; }
+h5 { font-size: 17px; line-height: 24px; }
+h6 { font-size: 14px; line-height: 21px; }
+
+p { margin: 20px; }
+
+/* ============================= Links ============================= */
+a, a:visited {
+	color: #333;
+	text-decoration: none;
+	outline: 0;
+}
+
+a:hover, a:focus {
+	color: #000;
+	text-decoration: none;
+}
+
+
+/* ============================= Lists ============================= */
+
+ul {
+	list-style: none outside;
+}
+
+/* ============================= Responsive Images ============================= */
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+/* ============================= Buttons, Labels, and Textarea ============================= */
+
+.logout {
+	position: absolute;
+	right: 50px;
+}
+
+input, select, textarea {
+	font: inherit;
+	color: #574b45;
+	background-color: #bfd6c7;
+	border: none;
+	border-radius: 3px;
+	padding: 10px;
+	margin-top: 0.3em;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+	color: #8a8a8a;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color: #8a8a8a;
+	opacity: 1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color: #8a8a8a;
+	opacity: 1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+	color: #8a8a8a;
+}
+
+input:hover, select:hover, textarea:hover { 
+	color: #fff;
+	background-color: #a5d4b5;
+	-webkit-transition: opacity 0.5s linear;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+
+textarea {
+	height: 200px;
+}
+
+input:focus, select:focus, textarea:focus {
+	color: #333;
+	background-color: #f9f9f9;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus {	
+	border-bottom: 1px solid #000;
+}
+
+#submit {
+	color: #24C0EB;
+}
+
+/* Fix for odd Mozilla border & padding issues */
+button::-moz-focus-inner, input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
